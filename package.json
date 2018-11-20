@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "react": "^16.6.3",
+    "react-bootstrap": "^0.32.4",
     "react-dom": "^16.6.3",
     "react-scripts": "2.1.1"
   },
@@ -21,5 +22,18 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "devDependencies": {
+    "enzyme": "^3.7.0",
+    "enzyme-adapter-react-16": "^1.7.0",
+    "jest-cli": "^23.6.0"
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "src/**/*.js",
+      "!src/index.js",
+      "!src/setupTests.js",
+      "!src/tempPolyfills.js"
+    ]
+  }
 }
